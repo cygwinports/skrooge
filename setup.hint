@@ -1,0 +1,6 @@
+category: Office KDE
+requires: libgcc1 libkdecore5 libofx4 libqca2 libQtCore4 libQtGui4 libQtScript4 libQtSql4 libQtSvg4 libQtWebKit4 libQtXml4 libsqlite3_0 libstdc++6
+sdesc: "KDE personal finances manager"
+ldesc: "Skrooge is a personal finances manager for KDE4, aiming at being 
+simple and intuitive. It allows you to keep track of your expenses and 
+incomes, categorize them, and build reports of them."

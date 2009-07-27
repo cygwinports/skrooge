@@ -1,0 +1,210 @@
+skrooge
+------------------------------------------
+Skrooge is a personal finances manager for KDE4, aiming at being simple 
+and intuitive. It allows you to keep track of your expenses and incomes, 
+categorize them, and build reports of them.
+
+Runtime requirements:
+  cygwin-1.7.0-52
+  libgcc1-4.3.2-2
+  libkdecore5-4.2.4-1
+  libofx4-0.9.1-1
+  libqca2-2.0.2-1
+  libQtCore4-4.5.1-1
+  libQtGui4-4.5.1-1
+  libQtScript4-4.5.1-1
+  libQtSql4-4.5.1-1
+  libQtSvg4-4.5.1-1
+  libQtWebKit4-4.5.1-1
+  libQtXml4-4.5.1-1
+  libsqlite3_0-3.6.11-1
+  libstdc++6-4.3.2-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-2.19.51-1
+  cmake-2.6.4-10
+  cygport-0.9.8-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
+  pkg-config-0.23b-10
+
+Canonical website:
+  http://extragear.kde.org/apps/skrooge/
+
+Canonical download:
+  http://sourceforge.net/projects/skrooge/files
+
+-------------------------------------------
+
+Build instructions:
+  unpack skrooge-0.2.9-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./skrooge-0.2.9-X.cygport all
+
+This will create:
+  /usr/src/skrooge-0.2.9-X-src.tar.bz2
+  /usr/src/skrooge-0.2.9-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/skrooge.sh
+  /usr/bin/cygskgbankgui-0.dll
+  /usr/bin/cygskgbankmodeler-0.dll
+  /usr/bin/cygskgbasegui-0.dll
+  /usr/bin/cygskgbasemodeler-0.dll
+  /usr/bin/skrooge.exe
+  /usr/lib/kde4/skrooge_bank.dll
+  /usr/lib/kde4/skrooge_bookmark.dll
+  /usr/lib/kde4/skrooge_categories.dll
+  /usr/lib/kde4/skrooge_dashboard.dll
+  /usr/lib/kde4/skrooge_debug.dll
+  /usr/lib/kde4/skrooge_delete.dll
+  /usr/lib/kde4/skrooge_file.dll
+  /usr/lib/kde4/skrooge_importexport.dll
+  /usr/lib/kde4/skrooge_monthly.dll
+  /usr/lib/kde4/skrooge_operation.dll
+  /usr/lib/kde4/skrooge_print.dll
+  /usr/lib/kde4/skrooge_properties.dll
+  /usr/lib/kde4/skrooge_refund.dll
+  /usr/lib/kde4/skrooge_report.dll
+  /usr/lib/kde4/skrooge_scheduled.dll
+  /usr/lib/kde4/skrooge_undoredo.dll
+  /usr/lib/kde4/skrooge_unit.dll
+  /usr/share/applications/kde4/skrooge.desktop
+  /usr/share/doc/skrooge/AUTHORS
+  /usr/share/doc/skrooge/COPYING
+  /usr/share/doc/skrooge/README
+  /usr/share/doc/skrooge/TODO
+  /usr/share/icons/oxygen/128x128/actions/skrooge_category.png
+  /usr/share/icons/oxygen/128x128/actions/skrooge_duplicate.png
+  /usr/share/icons/oxygen/128x128/actions/skrooge_less.png
+  /usr/share/icons/oxygen/128x128/actions/skrooge_monthly_report.png
+  /usr/share/icons/oxygen/128x128/actions/skrooge_more.png
+  /usr/share/icons/oxygen/128x128/actions/skrooge_much_less.png
+  /usr/share/icons/oxygen/128x128/actions/skrooge_much_more.png
+  /usr/share/icons/oxygen/128x128/actions/skrooge_open_report.png
+  /usr/share/icons/oxygen/128x128/actions/skrooge_schedule.png
+  /usr/share/icons/oxygen/128x128/actions/skrooge_split.png
+  /usr/share/icons/oxygen/128x128/actions/skrooge_split_stock.png
+  /usr/share/icons/oxygen/128x128/actions/skrooge_transfer.png
+  /usr/share/icons/oxygen/128x128/actions/skrooge_unit.png
+  /usr/share/icons/oxygen/128x128/apps/skrooge.png
+  /usr/share/icons/oxygen/128x128/apps/skrooge2.png
+  /usr/share/icons/oxygen/128x128/mimetypes/application-x-skg.png
+  /usr/share/icons/oxygen/128x128/mimetypes/application-x-skg2.png
+  /usr/share/icons/oxygen/scalable/actions/skrooge_category.svgz
+  /usr/share/icons/oxygen/scalable/actions/skrooge_duplicate.svgz
+  /usr/share/icons/oxygen/scalable/actions/skrooge_less.svgz
+  /usr/share/icons/oxygen/scalable/actions/skrooge_monthly_report.svgz
+  /usr/share/icons/oxygen/scalable/actions/skrooge_more.svgz
+  /usr/share/icons/oxygen/scalable/actions/skrooge_much_less.svgz
+  /usr/share/icons/oxygen/scalable/actions/skrooge_much_more.svgz
+  /usr/share/icons/oxygen/scalable/actions/skrooge_open_report.svgz
+  /usr/share/icons/oxygen/scalable/actions/skrooge_schedule.svgz
+  /usr/share/icons/oxygen/scalable/actions/skrooge_split.svgz
+  /usr/share/icons/oxygen/scalable/actions/skrooge_split_stock.svgz
+  /usr/share/icons/oxygen/scalable/actions/skrooge_transfer.svgz
+  /usr/share/icons/oxygen/scalable/actions/skrooge_unit.svgz
+  /usr/share/icons/oxygen/scalable/apps/skrooge.svgz
+  /usr/share/icons/oxygen/scalable/apps/skrooge2.svgz
+  /usr/share/icons/oxygen/scalable/mimetypes/application-x-skg.svgz
+  /usr/share/icons/oxygen/scalable/mimetypes/application-x-skg2.svgz
+  /usr/share/kde4/apps/skrooge/css/skrooge_monthly-default.css
+  /usr/share/kde4/apps/skrooge/images/logo/axa_banque__41179.png
+  /usr/share/kde4/apps/skrooge/images/logo/banque_de_savoie__10548.png
+  /usr/share/kde4/apps/skrooge/images/logo/banque_hervet__30368.png
+  /usr/share/kde4/apps/skrooge/images/logo/banque_postale__20041.png
+  /usr/share/kde4/apps/skrooge/images/logo/bnp_paribas__30004.png
+  /usr/share/kde4/apps/skrooge/images/logo/bred__40398.png
+  /usr/share/kde4/apps/skrooge/images/logo/caisse_epargne.png
+  /usr/share/kde4/apps/skrooge/images/logo/cic__30066.png
+  /usr/share/kde4/apps/skrooge/images/logo/cortal_consors__18889.png
+  /usr/share/kde4/apps/skrooge/images/logo/covefi__14690.png
+  /usr/share/kde4/apps/skrooge/images/logo/credit_agricole.png
+  /usr/share/kde4/apps/skrooge/images/logo/credit_cooperatif__42559.png
+  /usr/share/kde4/apps/skrooge/images/logo/credit_du_nord__30076.png
+  /usr/share/kde4/apps/skrooge/images/logo/credit_maritime__07389.png
+  /usr/share/kde4/apps/skrooge/images/logo/credit_municipal.png
+  /usr/share/kde4/apps/skrooge/images/logo/credit_mutuel.png
+  /usr/share/kde4/apps/skrooge/images/logo/dexia__17290.png
+  /usr/share/kde4/apps/skrooge/images/logo/groupama_banque__14878.png
+  /usr/share/kde4/apps/skrooge/images/logo/hsbc.png
+  /usr/share/kde4/apps/skrooge/images/logo/ing_direct__14559.png
+  /usr/share/kde4/apps/skrooge/images/logo/l10n/en/list_bank.txt
+  /usr/share/kde4/apps/skrooge/images/logo/l10n/en_US/list_bank.txt
+  /usr/share/kde4/apps/skrooge/images/logo/l10n/fr/list_bank.txt
+  /usr/share/kde4/apps/skrooge/images/logo/la_nef.png
+  /usr/share/kde4/apps/skrooge/images/logo/lcl__30002.png
+  /usr/share/kde4/apps/skrooge/images/logo/list_bank.txt
+  /usr/share/kde4/apps/skrooge/images/logo/smc__30077.png
+  /usr/share/kde4/apps/skrooge/images/logo/societe_generale__30003.png
+  /usr/share/kde4/apps/skrooge/images/splash.png
+  /usr/share/kde4/apps/skrooge/ressources/default_bookmarks.rc
+  /usr/share/kde4/apps/skrooge/ressources/default_categories.rc
+  /usr/share/kde4/apps/skrooge/ressources/l10n/fr/default_bookmarks.rc
+  /usr/share/kde4/apps/skrooge/ressources/l10n/fr/default_categories.rc
+  /usr/share/kde4/apps/skrooge/skrooge.notifyrc
+  /usr/share/kde4/apps/skrooge/skrooge.rc
+  /usr/share/kde4/apps/skrooge/theme/default.css
+  /usr/share/kde4/apps/skrooge_bookmark/skrooge_bookmark.rc
+  /usr/share/kde4/apps/skrooge_categories/skrooge_categories.rc
+  /usr/share/kde4/apps/skrooge_dashboard/skrooge_dashboard.rc
+  /usr/share/kde4/apps/skrooge_delete/skrooge_delete.rc
+  /usr/share/kde4/apps/skrooge_file/skrooge_file.rc
+  /usr/share/kde4/apps/skrooge_importexport/skrooge_importexport.rc
+  /usr/share/kde4/apps/skrooge_monthly/skrooge_monthly.rc
+  /usr/share/kde4/apps/skrooge_operation/skrooge_operation.rc
+  /usr/share/kde4/apps/skrooge_print/skrooge_print.rc
+  /usr/share/kde4/apps/skrooge_properties/skrooge_properties.rc
+  /usr/share/kde4/apps/skrooge_refund/skrooge_refund.rc
+  /usr/share/kde4/apps/skrooge_report/skrooge_report.rc
+  /usr/share/kde4/apps/skrooge_scheduled/skrooge_scheduled.rc
+  /usr/share/kde4/apps/skrooge_undoredo/skrooge_undoredo.rc
+  /usr/share/kde4/apps/skrooge_unit/skrooge_unit.rc
+  /usr/share/kde4/config.kcfg/skrooge.kcfg
+  /usr/share/kde4/config.kcfg/skrooge_bank.kcfg
+  /usr/share/kde4/config.kcfg/skrooge_dashboard.kcfg
+  /usr/share/kde4/config.kcfg/skrooge_file.kcfg
+  /usr/share/kde4/config.kcfg/skrooge_monthly.kcfg
+  /usr/share/kde4/config.kcfg/skrooge_operation.kcfg
+  /usr/share/kde4/config.kcfg/skrooge_print.kcfg
+  /usr/share/kde4/config.kcfg/skrooge_refund.kcfg
+  /usr/share/kde4/config.kcfg/skrooge_scheduled.kcfg
+  /usr/share/kde4/config.kcfg/skrooge_undoredo.kcfg
+  /usr/share/kde4/config.kcfg/skrooge_unit.kcfg
+  /usr/share/kde4/services/skrooge-plugin-bank.desktop
+  /usr/share/kde4/services/skrooge-plugin-bookmark.desktop
+  /usr/share/kde4/services/skrooge-plugin-categories.desktop
+  /usr/share/kde4/services/skrooge-plugin-dashboard.desktop
+  /usr/share/kde4/services/skrooge-plugin-debug.desktop
+  /usr/share/kde4/services/skrooge-plugin-delete.desktop
+  /usr/share/kde4/services/skrooge-plugin-file.desktop
+  /usr/share/kde4/services/skrooge-plugin-importexport.desktop
+  /usr/share/kde4/services/skrooge-plugin-monthly.desktop
+  /usr/share/kde4/services/skrooge-plugin-operation.desktop
+  /usr/share/kde4/services/skrooge-plugin-print.desktop
+  /usr/share/kde4/services/skrooge-plugin-properties.desktop
+  /usr/share/kde4/services/skrooge-plugin-refund.desktop
+  /usr/share/kde4/services/skrooge-plugin-report.desktop
+  /usr/share/kde4/services/skrooge-plugin-scheduled.desktop
+  /usr/share/kde4/services/skrooge-plugin-undoredo.desktop
+  /usr/share/kde4/services/skrooge-plugin-unit.desktop
+  /usr/share/kde4/servicetypes/skrooge-plugin.desktop
+  /usr/share/mime/packages/x-skg.xml
+
+------------------
+
+Port Notes:
+
+----- version 0.2.9-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
