@@ -1,0 +1,12 @@
+inherit kde4
+
+DESCRIPTION="KDE4 personal finance manager"
+HOMEPAGE="http://skrooge.org/"
+SRC_URI="http://skrooge.org/files/${P}.tar.bz2"
+
+PATCH_URI="0.7.0-cmake-install.patch"
+
+skrooge_CONTENTS="etc/ usr/bin/ usr/lib/kde4/*.dll usr/lib/kde4/plugins/ usr/share/"
+PKG_IGNORE="usr/lib/kde4/lib/"
+
+DIFF_EXCLUDES="tests"

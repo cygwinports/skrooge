@@ -1,0 +1,21 @@
+--- origsrc/skrooge-0.7.0/skgbankgui/CMakeLists.txt	2010-04-05 11:39:24.000000000 -0500
++++ src/skrooge-0.7.0/skgbankgui/CMakeLists.txt	2010-04-29 22:11:21.429519600 -0500
+@@ -30,6 +30,6 @@ INSTALL(TARGETS skgbankgui ${INSTALL_TAR
+ IF(WIN32)
+ INSTALL(TARGETS skgbankgui LIBRARY ARCHIVE DESTINATION ${PLUGIN_INSTALL_DIR}/plugins/designer )
+ ELSE(WIN32)
+-INSTALL(TARGETS skgbankgui LIBRARY DESTINATION ${PLUGIN_INSTALL_DIR}/plugins/designer )
++INSTALL(TARGETS skgbankgui LIBRARY RUNTIME DESTINATION ${PLUGIN_INSTALL_DIR}/plugins/designer )
+ ENDIF(WIN32)
+ kde4_install_icons(${ICON_INSTALL_DIR})
+--- origsrc/skrooge-0.7.0/skgbasegui/CMakeLists.txt	2010-04-05 11:39:20.000000000 -0500
++++ src/skrooge-0.7.0/skgbasegui/CMakeLists.txt	2010-04-29 22:11:28.933948800 -0500
+@@ -54,7 +54,7 @@ INSTALL(TARGETS skgbasegui ${INSTALL_TAR
+ IF(WIN32)
+ INSTALL(TARGETS skgbasegui LIBRARY ARCHIVE DESTINATION ${PLUGIN_INSTALL_DIR}/plugins/designer )
+ ELSE(WIN32)
+-INSTALL(TARGETS skgbasegui LIBRARY DESTINATION ${PLUGIN_INSTALL_DIR}/plugins/designer )
++INSTALL(TARGETS skgbasegui LIBRARY RUNTIME DESTINATION ${PLUGIN_INSTALL_DIR}/plugins/designer )
+ ENDIF(WIN32)
+ 
+ INSTALL(FILES ${PROJECT_SOURCE_DIR}/skgmainpanel.rc  DESTINATION  ${DATA_INSTALL_DIR}/skg )
