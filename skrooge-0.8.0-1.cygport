@@ -6,7 +6,7 @@ SRC_URI="http://skrooge.org/files/${P}.tar.bz2"
 
 PATCH_URI="0.7.0-cmake-install.patch"
 
-skrooge_CONTENTS="etc/ usr/bin/ usr/lib/kde4/*.dll usr/lib/kde4/plugins/ usr/share/"
-PKG_IGNORE="usr/lib/kde4/lib/"
+skrooge_CONTENTS="etc/ usr/bin/ usr/lib/kde4/ usr/share/"
+PKG_IGNORE="usr/lib/lib*"
 
 DIFF_EXCLUDES="tests"
