@@ -1,0 +1,14 @@
+--- origsrc/skrooge-1.0.0/plugins/skrooge/skrooge_monthly/grantlee_filters/CMakeLists.txt	2011-10-04 13:00:50.000000000 -0500
++++ src/skrooge-1.0.0/plugins/skrooge/skrooge_monthly/grantlee_filters/CMakeLists.txt	2011-10-06 22:37:38.846508500 -0500
+@@ -12,9 +12,8 @@ GRANTLEE_ADD_PLUGIN(grantlee_skroogefilt
+ TARGET_LINK_LIBRARIES(grantlee_skroogefilters skgbasemodeler skgbankmodeler skgbasegui)
+ 
+ ########### install files ###############
+-INSTALL(TARGETS grantlee_skroogefilters ${INSTALL_TARGETS_DEFAULT_ARGS}  )
+ IF(WIN32)
+   INSTALL(TARGETS grantlee_skroogefilters LIBRARY ARCHIVE DESTINATION ${PLUGIN_INSTALL_DIR}/../grantlee/0.1 )
+ ELSE(WIN32)
+   INSTALL(TARGETS grantlee_skroogefilters LIBRARY DESTINATION ${PLUGIN_INSTALL_DIR}/../grantlee/0.1 )
+-ENDIF(WIN32)
+\ No newline at end of file
++ENDIF(WIN32)
