@@ -11,6 +11,7 @@ categorize them, and build reports of them."
 HOMEPAGE="http://skrooge.org/"
 SRC_URI="mirror://kde/stable/skrooge/skrooge-${VERSION}.tar.bz2"
 
+skrooge_REQUIRES="kde-runtime"
 skrooge_CONTENTS="etc/ usr/bin/ usr/lib/kde4/ usr/share/"
 PKG_IGNORE="usr/lib/lib*"
 
