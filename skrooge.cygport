@@ -1,7 +1,7 @@
-inherit kde4
+inherit kf5
 
 NAME="skrooge"
-VERSION=1.12.5
+VERSION=2.10.5
 RELEASE=1
 CATEGORY="Office"
 SUMMARY="KDE personal finance manager"
@@ -10,8 +10,12 @@ simple and intuitive. It allows you to keep track of your expenses and incomes,
 categorize them, and build reports of them."
 HOMEPAGE="http://skrooge.org/"
 SRC_URI="mirror://kde/stable/skrooge/skrooge-${VERSION}.tar.xz"
+PATCH_URI="2.10.5-dllexport.patch"
 
-skrooge_CONTENTS="etc/ usr/bin/ usr/lib/kde4/ usr/share/"
+skrooge_REQUIRES="sqlcipher"
+skrooge_CONTENTS="etc/ usr/bin/ usr/lib/qt5/plugins/ usr/share/"
 PKG_IGNORE="usr/lib/lib*"
 
 DIFF_EXCLUDES="tests"
+
+CYGCMAKE_ARGS="-DSKG_DESIGNER=OFF -DSKG_WEBENGINE=OFF"

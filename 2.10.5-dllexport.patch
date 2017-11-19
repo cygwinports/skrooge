@@ -1,0 +1,11 @@
+--- origsrc/skrooge-2.10.5/skgsqlcipher/qsql_sqlite_p.h	2017-11-08 08:18:43.000000000 -0600
++++ src/skrooge-2.10.5/skgsqlcipher/qsql_sqlite_p.h	2017-11-19 14:13:19.136117700 -0600
+@@ -59,7 +59,7 @@ struct sqlite3;
+ #ifdef QT_PLUGIN
+ #define Q_EXPORT_SQLDRIVER_SQLITE
+ #else
+-#define Q_EXPORT_SQLDRIVER_SQLITE Q_SQL_EXPORT
++#define Q_EXPORT_SQLDRIVER_SQLITE Q_DECL_EXPORT
+ #endif
+ 
+ QT_BEGIN_NAMESPACE
