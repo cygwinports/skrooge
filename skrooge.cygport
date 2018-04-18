@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="skrooge"
-VERSION=2.10.5
+VERSION=2.12.0
 RELEASE=1
 CATEGORY="Office"
 SUMMARY="KDE personal finance manager"
